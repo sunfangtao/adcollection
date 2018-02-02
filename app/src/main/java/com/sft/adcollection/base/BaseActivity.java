@@ -51,7 +51,7 @@ public class BaseActivity extends cn.sft.baseactivity.base.BaseActivity {
         //对返回的数据进行统一的处理，比如数据是否可用，是否有效等等，如果可用交由子类处理
         try {
             String result = new String(bytes);
-            util.print("返回数据  type=" + type + " json=" + result);
+            util.print("返回数据 type=" + type + " json=" + result);
             JSONObject jsonObject = new JSONObject(result);
             if (jsonObject.has("code")) {
                 if (jsonObject.getString("code").equals("success")) {
