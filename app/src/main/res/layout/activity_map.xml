@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MapActivity">
+
+    <include
+        android:id="@+id/map_titlebar"
+        layout="@layout/layout_titlebar" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/uicolor_lightblue"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#c7c7c7"
+        android:orientation="horizontal">
+
+        <com.sft.adcollection.viewutil.RadioGroup
+            android:id="@+id/map_radiogroup"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/map_adlayout"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/map_adbtn"
+                    style="@style/Map_RadioButton"
+                    android:text="@string/ad" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/map_surveylayout"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/map_surveybtn"
+                    style="@style/Map_RadioButton"
+                    android:text="@string/survey" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:id="@+id/map_handlelayout"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioButton
+                    android:id="@+id/map_handlebtn"
+                    style="@style/Map_RadioButton"
+                    android:text="@string/handle" />
+            </RelativeLayout>
+
+        </com.sft.adcollection.viewutil.RadioGroup>
+
+        <Button
+            android:id="@+id/map_collectionbtn"
+            style="@style/Map_MenuButton"
+            android:layout_weight="1"
+            android:text="@string/collection" />
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

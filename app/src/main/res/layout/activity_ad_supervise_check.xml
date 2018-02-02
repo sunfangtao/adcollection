@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/uicolor_write">
+
+    <include
+        android:id="@+id/supervisecheck_titlebar"
+        layout="@layout/layout_titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/supervisecheck_titlebar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="采购商名称" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/supervisecheck_customernameet"
+                    style="@style/SuperviseCheck_EditTextInput"
+                    android:completionThreshold="2"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="机构电话" />
+
+                <EditText
+                    android:id="@+id/supervisecheck_customerphoneet"
+                    style="@style/SuperviseCheck_EditTextInput" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="广告内容" />
+
+                <EditText
+                    android:id="@+id/supervisecheck_adcontentet"
+                    style="@style/SuperviseCheck_EditTextInput" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/supervisecheck_regionlayout"
+                style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="行政区域" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_provincespinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_cityspinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_districtspinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="签约状态" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_statespinner"
+                    style="@style/SuperviseCheck_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="广告类别" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_adtypespinner"
+                    style="@style/SuperviseCheck_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="画面分类" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_damagedconditionspinner"
+                    style="@style/SuperviseCheck_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="审核结果" />
+
+                <Spinner
+                    android:id="@+id/supervisecheck_checkspinner"
+                    style="@style/SuperviseCheck_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/supervisecheck_lawlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                    <TextView
+                        style="@style/SuperviseCheck_TextViewLabel"
+                        android:text="违法分类" />
+
+                    <Spinner
+                        android:id="@+id/supervisecheck_lawtypespinner"
+                        style="@style/SuperviseCheck_Spinner" />
+                </LinearLayout>
+
+                <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                    <TextView
+                        style="@style/SuperviseCheck_TextViewLabel"
+                        android:text="违法编号" />
+
+                    <Spinner
+                        android:id="@+id/supervisecheck_lawcodespinner"
+                        style="@style/SuperviseCheck_Spinner" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/supervisecheck_lawcontenttv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:minLines="2" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/SuperviseCheck_LinearLayout">
+
+                <TextView
+                    style="@style/SuperviseCheck_TextViewLabel"
+                    android:text="照片" />
+
+                <ImageButton
+                    android:id="@+id/supervisecheck_takepicimg"
+                    android:layout_width="37dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/take_pic_collect" />
+
+                <ImageView
+                    android:id="@+id/supervisecheck_takepicthumbimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/supervisecheck_addbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="20dp"
+                android:background="@color/uicolor_lightblue"
+                android:text="增加违法分类"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/supervisecheck_addresulttv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:minLines="2" />
+
+            <Button
+                android:id="@+id/supervisecheck_confirmbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginTop="20dp"
+                android:background="@color/uicolor_lightblue"
+                android:text="确认"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

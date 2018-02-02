@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 标题栏参数 -->
+    <dimen name="titlebar_layout_height">40dp</dimen>
+    <dimen name="titlebar_leftbtn_height">32dp</dimen>
+    <dimen name="titlebar_leftbtn_width">32dp</dimen>
+    <dimen name="titlebar_rightbtn_width">15dp</dimen>
+    <dimen name="titlebar_btn_margin">15dp</dimen>
+    <dimen name="input_hight">25dp</dimen>
+
+    <!-- 登录界面输入框高度 -->
+    <dimen name="loginactivity_et_height">45dp</dimen>
+</resources>

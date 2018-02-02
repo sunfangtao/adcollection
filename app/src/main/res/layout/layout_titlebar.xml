@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/titlebar_layout_height"
+    android:background="@color/uicolor_lightblue"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/titlebar_left_imgbtn"
+            android:layout_width="@dimen/titlebar_leftbtn_width"
+            android:layout_height="@dimen/titlebar_leftbtn_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/titlebar_btn_margin"
+            android:background="@mipmap/left_return" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titlebar_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="@string/app_name"
+        android:textColor="@color/textcolor_black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/titlebar_right_imgiv"
+            android:layout_width="@dimen/titlebar_rightbtn_width"
+            android:layout_height="@dimen/titlebar_leftbtn_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titlebar_right_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:text="@string/change_address"
+            android:textColor="@color/textcolor_black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- 登录界面输入框 -->
+    <style name="Login_EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/loginactivity_et_height</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:textColorHint">@color/textcolor_gray</item>
+        <item name="android:background">@drawable/login_et_bg</item>
+    </style>
+
+    <!-- 地图界面底部按钮 -->
+    <style name="Map_MenuButton">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:background">@drawable/map_radiobtn_bg</item>
+    </style>
+
+    <!-- 地图界面底部按钮（单选框） -->
+    <style name="Map_RadioButton" parent="Map_MenuButton">
+        <item name="android:button">@null</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:background">@drawable/map_radiobtn_bg</item>
+    </style>
+
+    <!-- 采集界面Label -->
+    <style name="Collection_TextViewLabel">
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 采集界面Spinner -->
+    <style name="Collection_Spinner">
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 采集界面LinearLayout(行) -->
+    <style name="Collection_LinearLayout">
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <!-- 采集界面输入框(EditText、TextView) -->
+    <style name="Collection_EditTextInput">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <!-- 媒体详情界面标签(TextView) -->
+    <style name="MediaDetail_TextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:minHeight">30dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+    </style>
+
+    <!-- 处理界面Label -->
+    <style name="Handle_TextViewLabel" parent="Collection_TextViewLabel" />
+
+    <!-- 处理界面LinearLayout(行) -->
+    <style name="Handle_LinearLayout" parent="Collection_LinearLayout" />
+
+    <!-- 处理界面输入框(EditText、TextView) -->
+    <style name="Handle_EditTextInput" parent="Collection_EditTextInput" />
+
+    <!-- 检测审核界面LinearLayout(行) -->
+    <style name="SuperviseCheck_LinearLayout" parent="Collection_LinearLayout" />
+
+    <!-- 检测审核界面Label -->
+    <style name="SuperviseCheck_TextViewLabel" parent="Collection_TextViewLabel">
+        <item name="android:layout_width">100dp</item>
+    </style>
+
+    <!-- 检测审核界面输入框(EditText、TextView) -->
+    <style name="SuperviseCheck_EditTextInput" parent="Collection_EditTextInput" />
+
+    <!-- 检测审核界面Spinner -->
+    <style name="SuperviseCheck_Spinner" parent="Collection_Spinner" />
+
+    <style name="Handle_Detail_TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/textcolor_black</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- 地区联动对话框 -->
+    <style name="Region_Select_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+    </style>
+
+</resources>

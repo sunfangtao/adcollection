@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="媒体形式" />
+
+                <Spinner
+                    android:id="@+id/collection_stylespinner"
+                    style="@style/Collection_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="媒体类别" />
+
+                <Spinner
+                    android:id="@+id/collection_typespinner"
+                    style="@style/Collection_Spinner" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="机构名称" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/collection_suppliernameet"
+                    style="@style/Collection_EditTextInput"
+                    android:completionThreshold="2"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="机构电话" />
+
+                <EditText
+                    android:id="@+id/collection_supplierphoneet"
+                    style="@style/Collection_EditTextInput" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="行政区域" />
+
+                <Spinner
+                    android:id="@+id/collection_provincespinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/collection_cityspinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/collection_districtspinner"
+                    style="@style/Collection_Spinner"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="行政区域" />
+
+                <EditText
+                    android:id="@+id/collection_areaet"
+                    style="@style/Collection_EditTextInput" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="详细地址" />
+
+                <EditText
+                    android:id="@+id/collection_addresset"
+                    style="@style/Collection_EditTextInput"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="视频" />
+
+                <ImageButton
+                    android:id="@+id/collection_videoimg"
+                    android:layout_width="37dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/take_pic_collect" />
+
+                <ImageView
+                    android:id="@+id/collection_videothumbimg"
+                    android:layout_width="128dp"
+                    android:layout_height="96dp"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/Collection_LinearLayout">
+
+                <TextView
+                    style="@style/Collection_TextViewLabel"
+                    android:text="照片" />
+
+                <ImageButton
+                    android:id="@+id/collection_takepicimg"
+                    android:layout_width="37dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/take_pic_collect" />
+
+                <ImageView
+                    android:id="@+id/collection_takepicthumbimg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/collection_addbtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/uicolor_lightblue"
+                android:text="添加新版面"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/collection_pagenumtv"
+                style="@style/Collection_TextViewLabel"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="照片"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/collection_updatebtn"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/uicolor_lightblue"
+                android:text="开始上传"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

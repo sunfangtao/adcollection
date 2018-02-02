@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/uicolor_write"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mediadetail_titlebar"
+        layout="@layout/layout_titlebar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/mediadetail_codetv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/mediacode" />
+
+            <TextView
+                android:id="@+id/mediadetail_typetv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/mediatype" />
+
+            <TextView
+                android:id="@+id/mediadetail_attributetv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/areaattribute" />
+
+            <TextView
+                android:id="@+id/mediadetail_addresstv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/mediaaddress" />
+
+            <TextView
+                android:id="@+id/mediadetail_regiontv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/mediaregion" />
+
+            <TextView
+                android:id="@+id/mediadetail_nametv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/organizename" />
+
+            <TextView
+                android:id="@+id/mediadetail_phonetv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/organizephone" />
+
+            <TextView
+                android:id="@+id/mediadetail_trafficnumbertv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/trafficnumber" />
+
+            <TextView
+                android:id="@+id/mediadetail_urbanmanagernumbertv"
+                style="@style/MediaDetail_TextView"
+                android:text="@string/urbanmanagernumber" />
+
+            <ImageView
+                android:id="@+id/mediadetail_picim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:id="@+id/mediadetail_pagelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:divider="@drawable/linear_trans_divider"
+                android:orientation="vertical"
+                android:layout_marginBottom="15dp"
+                android:showDividers="middle"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
